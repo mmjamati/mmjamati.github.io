@@ -1,5 +1,5 @@
 ﻿var data = {
-    labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
+    labels: ["JS", "JS Frameworks", "Ruby", "HTML", "C++", "Python", "PHP"],
     datasets: [
         {
             label: "My First dataset",
