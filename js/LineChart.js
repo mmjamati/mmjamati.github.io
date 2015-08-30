@@ -1,5 +1,5 @@
 ﻿var LineChart = {
-    labels: ["1.0", "2.0", "3.0", "4.0", "5.0"],
+    labels: ["2.0", "4.0", "6.0", "8.0", "10.0"],
     datasets: [
 
     /*
@@ -17,7 +17,7 @@
         strokeColor: "rgba(255,255,255,1)",
         pointColor: "rgba(173,173,173,1)",
         pointStrokeColor: "#fff",
-        data: [28, 68, 40, 19, 96]
+        data: [5, 17, 37, 65, 101]
     }
     
     ]
