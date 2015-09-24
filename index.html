@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="Mukhlis Jamatolail" content="">
 
-    <title>Q3: Integral</title>
+    <title>[MJ]: Mukhlis Jamato</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -37,7 +37,7 @@
 <body id="page-top">
 
    
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top" style="display:none">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top" style="display:normal">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -47,7 +47,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Q3</a>
+                <a class="navbar-brand page-scroll" href="#page-top">[MJ]</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -57,10 +57,13 @@
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a class="page-scroll" href="#education">Education</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a class="page-scroll" href="#skills">Skills and Expertise</a>
+                    <li>
+                        <a class="page-scroll" href="#projects">Projects and Portfolio</a>
+                    </li>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -75,38 +78,91 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1>SLab Q3 RUNDOWN:</h1>
+                <h1 style="padding:20px; border-radius:30px;color:#555">Mukhlis Jamatolail</h1>
                 <hr>
-                <h2 style="color:#fff; margin-top:-10px">Why the answer is 450</h2>
-                <a href="#services" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+                <h2 style="color:#555; margin-top:0px; opacity:0.8">Learner. Leader</h2>
+                <p style="margin-top:50px"><a href="#about" class="btn btn-primary btn-xl page-scroll">More</a></p>
             </div>
         </div>
     </header>
 
-    <section id="services" style="display:normal">
+    <section id="about" style="display:normal;border-bottom:4px solid rgba(0,107,255,0.9);">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">&#x222b What is an Integral?</h2>
+                    <h2 class="section-heading">About</h2>
+                    <hr class="primary" style="">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 text-center">
+                    <div class="service-box">
+                        <!-- <i class="fa fa-4x fa-diamond wow bounceIn text-primary">aldskfjlsdk</i> -->
+                        <i class="fa fa-child fa-5x wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                        <h3>Intro</h3>
+                        <p class="text-muted">Born in Teluk Intan on June 1992, Mukhlis set to pursue his dreams. Growing up in Southern Perak, Mukhlis had a childhood full of colors and experience, all of which came together to incubate a strong fascination in engineering.</p>
+                    </div>
+                </div>
+                <!--
+                <div class="col-lg-6 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-area-chart wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                        <h3>Space under a graph</h3>
+                        <p class="text-muted">Or can be seen as an area under the curve.</p>
+                    </div>
+                </div>
+                -->
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-primary" id="education">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 style="font-weight:600;">Education</h2>
+                    </br>
+                    <p><a href="#" class="btn btn-default-border btn-xl"> Tadika Seri ABIM </a></p>
+                    <p><a href="#" class="btn btn-default-border btn-xl"> SK Sungai Buloh, Hutan Melintang, Perak </a></p>
+                    <p><a href="#" class="btn btn-default-border btn-xl"> SBPI Gopeng, Perak</a></p>
+                    <p><a href="#" class="btn btn-default-border btn-xl"> INTEC, Shah Alam</a></p>
+                    <p><a href="#" class="btn btn-default-border btn-xl"> University of Colorado, Boulder</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" style="display:normal">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Skills and Expertise</h2>
                     <hr class="primary">
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 text-center">
+                <div class="col-lg-6 col-md-12 text-center">
                     <div class="service-box">
                         <!-- <i class="fa fa-4x fa-diamond wow bounceIn text-primary">aldskfjlsdk</i> -->
-                        <i class="fa fa-5x wow bounceIn text-primary" data-wow-delay=".1s">&#931; </i>
-                        <h3>Summation of infinitesimal units</h3>
-                        <p class="text-muted">A unit in consideration has a certain height at a point in x. That unit also has a width close to zero. </p>
+                        <h3>Engineering</h3>
+                        <canvas id="canvasEng" width="300" height="300"></canvas>
+                        <p class="text-muted" style="font-size:small; text-align:left"> *ASPENTECH softwares include HYSYS, Plus, Heat Integration Analysis, and One</p>
+                        </br>
+                        <p class="text-muted" style="font-size:small; text-align:left"> **Microsoft professional tools include Excel, Project, and Visio</p>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 text-center">
+                <div class="col-lg-6 col-md-12 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-area-chart wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                        <h3>Space under a graph</h3>
-                        <p class="text-muted">Or can be seen as an area under the curve.</p>
+                        <!--<i class="fa fa-4x fa-area-chart wow bounceIn text-primary" data-wow-delay=".2s"></i>-->
+                        <h3>Web Development</h3>
+                        <canvas id="canvasWeb" width="300" height="300"></canvas>
+                        <p class="text-muted" style="font-size:small; text-align:left"> *Javascript libraries include D3.js, Angular.js, jQuery, and Node.js</p>
+                        <p class="text-muted"> </p>
                     </div>
                 </div>
 
@@ -114,33 +170,24 @@
         </div>
     </section>
 
-    <section class="bg-primary" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h3>I'll put the equation as title later.</h3>
-                    <p><canvas id="canvasLine" width="800" height="1000"></canvas></p>
-                    <a href="#" class="btn btn-default-border btn-xl">Finished!</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    
-
-    <section class="no-padding" id="portfolio" style="display:none">
+    <section class="no-padding" id="projects" style="display:normal">
         <div class="container-fluid">
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
                     <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-title">
+                            <div class="portfolio-box-title-content">
+                            <img src="img/icons/engr-icon.png" alt="" width="30px" style="float:left;margin: -2px 10px 0px 0px; "/>  Process Engineering
+                            </div>
+                        </div>
+                        <img src="img/portfolio/TEE-effects.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    Process Engineering
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    Triple Effect Evaporator
                                 </div>
                             </div>
                         </div>
@@ -148,19 +195,105 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-title">
+                            <div class="portfolio-box-title-content">
+                                <img src="img/icons/engr-icon.png" alt="" width="30px" style="float:left;margin: -2px 10px 0px 0px; " />  Process Engineering
+                            </div>
+                        </div>
+                        <img src="img/portfolio/TEE-HX.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    Process Engineering
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    TEE: Shell and Tube Heat Exchanger
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <div class="portfolio-box-title">
+                            <div class="portfolio-box-title-content">
+                                <img src="img/icons/engr-icon.png" alt="" width="30px" style="float:left;margin: -2px 10px 0px 0px; " />  Process Engineering
+                            </div>
+                        </div>
+                        <img src="img/portfolio/flowmeter.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Process Engineering
+                                </div>
+                                <div class="project-name">
+                                    Flowrate
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <div class="portfolio-box-title">
+                            <div class="portfolio-box-title-content">
+                                <img src="img/icons/engr-icon.png" alt="" width="30px" style="float:left;margin: -2px 10px 0px 0px; " />  Process Engineering
+                            </div>
+                        </div>
+                        <img src="img/portfolio/pressure-meter.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Process Engineering
+                                </div>
+                                <div class="project-name">
+                                    Pressure Meters
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <div class="portfolio-box-title">
+                            <div class="portfolio-box-title-content">
+                                <img src="img/icons/engr-icon.png" alt="" width="30px" style="float:left;margin: -2px 10px 0px 0px; " />  Process Engineering
+                            </div>
+                        </div>
+                        <img src="img/portfolio/TFR.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Process Engineering
+                                </div>
+                                <div class="project-name">
+                                    Tubular Flow Reactor
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <div class="portfolio-box-title">
+                            <div class="portfolio-box-title-content">
+                                <img src="img/icons/engr-icon.png" alt="" width="30px" style="float:left;margin: -2px 10px 0px 0px; " />  Process Engineering
+                            </div>
+                        </div>
+                        <img src="img/portfolio/pumps.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Process Engineering
+                                </div>
+                                <div class="project-name">
+                                    Pressure Effectors
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--
                 <div class="col-lg-4 col-sm-6">
                     <a href="#" class="portfolio-box">
                         <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
@@ -221,6 +354,7 @@
                         </div>
                     </a>
                 </div>
+                -->
             </div>
         </div>
     </section>
@@ -234,21 +368,21 @@
         </div>
     </aside>
 
-    <section id="contact" style="display:none">
+    <section id="contact" style="display:normal">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <h2 class="section-heading">Contact me!</h2>
                     <hr class="primary">
-                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                    <p>Am I an excellent match for your company? Want to meet me in person for a professional conversation? Lets get in touch!</p>
                 </div>
                 <div class="col-lg-4 col-lg-offset-2 text-center">
                     <i class="fa fa-phone fa-3x wow bounceIn"></i>
                     <p>123-456-6789</p>
                 </div>
                 <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
+                    <p><i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i></p>
+                    <p><a href="mailto:your-email@your-domain.com" style="color:#0087ad;">mukhlis.jamato@gmail.com</a></p>
                 </div>
             </div>
         </div>
