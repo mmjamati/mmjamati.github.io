@@ -85,7 +85,15 @@ aside {
     transition: all .35s;
 }
 
+
 .navbar-default .navbar-header .navbar-brand {
+    text-transform: uppercase;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-weight: 700;
+    color: #0087ad;
+}
+
+.navbar-portfolio-default {
     text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
@@ -127,6 +135,10 @@ aside {
         background-color: transparent;
     }
 
+    .navbar-portfolio-default {
+        border-color: rgba(255,255,255,.3);
+        background-color: rgba(0,0,0,.3);
+    }
     .navbar-default .navbar-header .navbar-brand {
         color: rgba(240,95,64,1);
         font-size:24px;
@@ -217,6 +229,10 @@ header .header-content .header-content-inner p {
 @media(min-width:768px) {
     header {
         min-height: 100%;
+    }
+
+    .header-portofolio {
+        min-height: 60%;
     }
 
     header .header-content {
@@ -519,4 +535,19 @@ body {
 
 .btn-default-border:hover {
   border: 2px solid #333;
+}
+
+.bg-abstract {
+        background-color: #fff;
+        color:#222;
+}
+
+.bg-abstract p{
+        padding:0px 50px 0px 50px;
+}
+
+.bg-contact {
+    background-color: #333;
+    color: #fff;
+    padding:50px 100px 20px 100px;
 }
