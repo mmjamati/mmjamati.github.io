@@ -25,6 +25,10 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css">
 
+    <script 
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgA3mQnjaXtMVWsov6FrVL0KvCdnI8NBs">
+    </script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -91,18 +95,27 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">About</h2>
-                    <hr class="primary" style="">
+                    <hr class="primary" style="margin-bottom:-20px">
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 text-center">
-                    <div class="service-box">
+                    <div class="about-box">
                         <!-- <i class="fa fa-4x fa-diamond wow bounceIn text-primary">aldskfjlsdk</i> -->
-                        <i class="fa fa-user fa-5x wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                        <h3>Intro</h3>
-                        <p class="text-muted">Born in Teluk Intan on June 1992, Mukhlis set to pursue his dreams. Growing up in Southern Perak, Mukhlis had a childhood full of colors and experience, all of which came together to incubate a strong fascination in engineering.</p>
+                        <i class="fa fa-user fa-5x wow bounceIn text-primary" data-wow-delay=".1s" style="margin-bottom:20px"></i>                        
+                        <p class="text-muted">Perak native chemical engineering graduate with fluent programming background.</p>
+                        <hr class="primary" style="margin-bottom:10px">
+                        <h3>Objective</h3>
+                        <p class="text-muted">Aspiring entry-level engineer looking for a full-time Chemical Engineering position in:</p>
+                        <ul class="text-muted text-left service-list">
+                            <li>Upstream to downstream chemical processing</li>
+                            <li>Computer Aided plant equipments design and simulation</li>
+                            <li>Project planning and management</li>
+                            <li>Instrumentation and quality controls</li>
+                            <li>Unit operation maintenance</li>
+                        </ul>
                     </div>
                 </div>
                 <!--
@@ -122,14 +135,20 @@
     <section class="bg-primary" id="education">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 style="font-weight:600;">Education</h2>
-                    </br>
-                    <p><a href="#" class="btn btn-default-border btn-xl"> Tadika Seri ABIM </a></p>
-                    <p><a href="#" class="btn btn-default-border btn-xl"> SK Sungai Buloh, Hutan Melintang, Perak </a></p>
-                    <p><a href="#" class="btn btn-default-border btn-xl"> SBPI Gopeng, Perak</a></p>
-                    <p><a href="#" class="btn btn-default-border btn-xl"> INTEC, Shah Alam</a></p>
-                    <p><a href="#" class="btn btn-default-border btn-xl"> University of Colorado, Boulder</a></p>
+                <div class="col-lg-12 col-md-12 text-center">
+                    <i class="fa fa-university fa-5x wow bounceIn text-alt" data-wow-delay=".1s" style="margin-top:-20px"></i>
+                    <h2 class="section-heading" style="margin-top:10px">Education</h2>
+                    <hr class="primary" style="border-color:#fff;margin-bottom:40px"/>
+                    <div class="col-lg-6 col-xs-12 col-sm-12 col-md-6" style="margin-bottom:30px">
+                        <button id="kinder" class="btn btn-default-border btn-xl"> Tadika Seri ABIM </button>
+                        <button id="midschool" class="btn btn-default-border btn-xl"> SK Sungai Buloh, Hutan Melintang, Perak </button>
+                        <button id="highschool" class="btn btn-default-border btn-xl"> SBPI Gopeng, Perak</button>
+                        <button id="prep" class="btn btn-default-border btn-xl"> INTEC, Shah Alam</button>
+                        <button id="cu" class="btn btn-default-border btn-xl"> University of Colorado, Boulder</button>
+                    </div>
+                    <div id="map-" class="col-lg-6 col-xs-12 col-md-6">
+                        <div id="map-canvas" class="map-box"></div>
+                    </div>   
                 </div>
             </div>
         </div>
@@ -409,6 +428,9 @@
     <script src="js/LineChart.js"></script>
     <script src="js/RadarChart.js"></script>
 
+    <!-- Google maps-->
+    <script src="js/maps.js"></script>
+    <script src="js/modernizr.js"></script>
 
 </body>
 
