@@ -15,7 +15,7 @@
     ]
 };
 
-var WebChart = new Chart(document.getElementById("canvasWeb").getContext("2d")).Radar(data1, { scaleFontSize: 13, scaleFontColor: "#ffa45e", pointDot: false, pointLabelFontColor: "#333", responsive: true });
+var WebChart = new Chart(document.getElementById("canvasWeb").getContext("2d")).Radar(data1, { scaleFontSize: 13, scaleFontColor: "#ffa45e", pointDot: false, pointLabelFontColor: "#333", responsive: true, angleLineColor: "rgba(0,0,0,.2)", scaleLineColor: "rgba(0,0,0,0.1)" });
 
 var data2 = {
     labels: ["ASPEN Tech*", "MATLAB", "3D Cad", "Cost Optimization", "MS Visio", "Data Infographics", "Economic Analysis"],
@@ -23,15 +23,15 @@ var data2 = {
     datasets: [
         {
             label: "Chemical Engineering Skills",
-            fillColor: "rgba(220,220,220,0.5)",
-            strokeColor: "rgba(220,220,220,1)",
-            pointColor: "rgba(220,220,220,1)",
+            fillColor: "rgba(204, 102, 153, 0.3)",
+            strokeColor: "rgba(220,220,220, 1)",
+            pointColor: "rgba(204, 102, 153, 1)",
             pointStrokeColor: "#fff",
             pointHighlightFill: "#fff",
-            pointHighlightStroke: "rgba(220,220,220,1)",
+            pointHighlightStroke: "rgba(204, 102, 153,1)",
             data: [65, 59, 90, 81, 56, 55, 40]
         },
     ]
 };
 
-var EngChart = new Chart(document.getElementById("canvasEng").getContext("2d")).Radar(data2, { scaleFontSize: 13, scaleFontColor: "#ffa45e", pointDot: false, pointLabelFontColor: "#333", responsive: true });
+var EngChart = new Chart(document.getElementById("canvasEng").getContext("2d")).Radar(data2, { scaleFontSize: 13, scaleFontColor: "#ffa45e", pointDot: false, pointLabelFontColor: "#333", responsive: true, angleLineColor: "rgba(0,0,0,.2)", scaleLineColor: "rgba(0,0,0,0.0.1)" });

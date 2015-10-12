@@ -48,27 +48,30 @@
     //google maps
         $("#cu").on('click', function () {
             newLocation(40.007598, -105.266011, 17);
-            
+            removeMarker();
+            $("#cu").siblings().removeClass("active");
+            $("#cu").addClass("active");
             
         });
         $("#highschool").on('click', function () {
             newLocation(4.442843, 101.133859, 17);
-            
-            
+            $("#highschool").siblings().removeClass("active");
+            $("#highschool").addClass("active");
         });
         $("#kinder").on('click', function () {
             newLocation(3.909093, 100.942562, 17);
-            
-            
+            $("#kinder").siblings().removeClass("active");
+            $("#kinder").addClass("active");
         });
         $("#midschool").on('click', function () {
             newLocation(3.921555, 100.950334, 17);
-            
-            
+            $("#midschool").siblings().removeClass("active");
+            $("#midschool").addClass("active");
         });
         $("#prep").on('click', function () {
             newLocation(3.046642, 101.501534, 17);
-            
+            $("#prep").siblings().removeClass("active");
+            $("#prep").addClass("active");
         });
 
 })(jQuery); // End of use strict
