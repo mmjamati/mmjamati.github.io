@@ -16,6 +16,14 @@
         event.preventDefault();
     });
 
+    $('a.map-page-scroll').bind('click', function (event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: ($($anchor.attr('href')).offset().top - 200) //offsett is 50 if navbar is present
+        }, 850, 'easeInOutExpo');
+        event.preventDefault();
+    });
+
     // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
         target: '.navbar-fixed-top',
