@@ -35,7 +35,9 @@ function initialize() {
     map = new google.maps.Map(document.getElementById('map-canvas'), {
         center: new google.maps.LatLng(40.007471 + transXinit, -105.266118 + transYinit), // Boulder CO
         zoom: 5,
-        scrollwheel: false
+        scrollwheel: false,
+        draggable: false
+
     });
     marker1 = new google.maps.Marker({
         position: { lat: 40.007471, lng: -105.266118 },
