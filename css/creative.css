@@ -658,4 +658,17 @@ body {
     border-bottom-left-radius: 14px;
 }
 
+.exp-container {
+    padding: 20px 0px 20px 0px;
+    border: 1px solid #000;
+    margin: 10px 0px 10px;
+}
+.exp-container:hover {
+    background-color: rgba(0,0,0,0.1);   
+}
+
+.exp-container .row .ul {
+    margin: 0;
+    padding: 0;
+}
 
