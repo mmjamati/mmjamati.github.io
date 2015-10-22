@@ -1,0 +1,620 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="Mukhlis Jamatolail" content="">
+
+    <title>[MJ]: Mukhlis Jamato</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    <script 
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgA3mQnjaXtMVWsov6FrVL0KvCdnI8NBs">
+    </script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+   
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top" style="display:normal;overflow:hidden">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">[MJ]</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#education">Education</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#skills">Skills and Expertise</a>
+                    <li>
+                        <a class="page-scroll" href="#projects">Projects Portfolio</a>
+                    </li>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav> 
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 style="padding:20px; border-radius:30px;color:#555">Mukhlis Jamatolail</h1>
+                <hr>
+                <h2 style="color:#555; margin-top:0px; opacity:0.8">Learner. Leader</h2>
+                <p style="margin-top:50px"><a href="#projects" class="btn btn-primary btn-xl page-scroll">Projects and Portfolio</a></p>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" style="display:normal;border-bottom:4px solid rgba(0,107,255,0.9);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">About</h2>
+                    <hr class="primary" style="margin-bottom:-20px">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 text-center">
+                    <div class="about-box">
+                        <!-- <i class="fa fa-4x fa-diamond wow bounceIn text-primary">aldskfjlsdk</i> -->
+                        <i class="fa fa-user fa-5x wow bounceIn text-primary" data-wow-delay=".1s" style="margin-bottom:20px"></i>                        
+                        <p class="text-muted">Perak native chemical engineering graduate with fluent programming background.</p>
+                        <hr class="primary" style="margin-bottom:10px">
+                        <h3>Objective</h3>
+                        <p class="text-muted">Aspiring entry-level engineer looking for a full-time Chemical Engineering position in:</p>
+                        <ul class="text-muted text-left service-list">
+                            <li>Upstream to downstream chemical processing</li>
+                            <li>Computer Aided plant equipments design and simulation</li>
+                            <li>Project planning and management</li>
+                            <li>Instrumentation and quality controls</li>
+                            <li>Unit operation maintenance</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--
+                <div class="col-lg-6 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-area-chart wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                        <h3>Space under a graph</h3>
+                        <p class="text-muted">Or can be seen as an area under the curve.</p>
+                    </div>
+                </div>
+                -->
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-primary" id="education" style="position:relative;">
+        <div id="map-canvas" class="map-box"></div>
+        <div class="maps-overlay" style=""><h1></h1></div>
+        <div class="container" style="margin-top:0px;position:relative;z-index:100;">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 text-center">
+                    <i class="fa fa-university fa-5x wow bounceIn text-alt" data-wow-delay=".1s" style="margin-top:-20px" ></i>
+                    <h2 class="section-heading" style="margin-top:10px">Education</h2>
+                    <hr class="primary" style="border-color:#fff;margin-bottom:40px"/>
+                    <div class="col-lg-8 col-xs-12 col-sm-12 col-md-8 list-group education-list" style="margin-bottom:30px">
+                        <a id="kinder" href="#map-canvas" class="list-group-item list-group-item-tall active map-page-scroll">Tadika Seri ABIM</a>
+                        <a id="midschool" href="#map-canvas" class="list-group-item list-group-item-tall map-page-scroll">SK Sg. Buloh, Htn Melintang, Perak</a>
+                        <a id="highschool" href="#map-canvas" class="list-group-item list-group-item-tall map-page-scroll">SBPI Gopeng, Perak</a>
+                        <a id="prep" href="#map-canvas" class="list-group-item list-group-item-tall map-page-scroll">INTEC, Shah Alam</a>
+                        <a id="cu" href="#map-canvas" class="list-group-item list-group-item-tall map-page-scroll">University of Colorado, Boulder, USA</a>
+                    </div>
+                </div>
+            </div>
+        </div>     
+    </section>
+    <section id="exps" style="border-bottom:7px solid rgba(51, 122, 255,0.8);overflow:hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 text-center">
+                    <i class="fa fa-trophy fa-5x wow bounceIn text-alt" data-wow-delay=".1s" style="margin-top:-50px;color:#333"></i>
+                    <br />
+                    <h2 class="section-heading">Experiences</h2>
+                    <hr class="primary">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 exp-container">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 text-left exp-left">
+                            <div class="row exp-row">
+                                <h1 class="">Engineer in Your Company</h1>
+                                <h3>Anywhere, World</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-right exp-left">
+                            <div class="row exp-row-date">
+                                <h5 class="exp-date">   Present - future</h5>
+                                <br />
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left exp-left">
+                            <div class="row exp-row" style="font-size:18px">
+                                <hr/>
+                                <ul>
+                                    <li>Want to fill this section of my portfolio?</li>
+                                    <li>Hire me, a highly motivated and flexible engineer is coming your way!</li>
+                                </ul>
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 exp-container">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 text-left exp-left">
+                            <div class="row exp-row">
+                                <h1 class="">Contact Engineer Intern</h1>
+                                <h3>Redi Engineering LLC, Lakewood CO</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-right exp-left">
+                            <div class="row exp-row-date">
+                                <h5 class="exp-date">   July 2015 - Dec. 2015</h5>
+                                <br />
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left exp-left">
+                            <div class="row exp-row">
+                                <ul>
+                                    <li>Data analysis and modelling of process equipments.</li>
+                                    <li>Assisted in designing new flaring system on a natural gas wellpad.</li>
+                                    <li>Operation focused on building inventory due to low oil price.</li>
+                                </ul>
+                                <br />
+                            </div>
+                        </div>
+                      </div>
+                    </div> 
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 exp-container">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 text-left exp-left">
+                            <div class="row exp-row">
+                                <h1 class="">Graphic Designer</h1>
+                                <h3>Program Council, University of Colorado</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-right exp-left">
+                            <div class="row exp-row-date">
+                                <h5 class="exp-date">June 2013 - May 2015</h5>
+                                <br />
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left exp-left">
+                            <div class="row exp-row">
+                                <ul>
+                                    <li>Student-run event organizer. Events include shows, concerts, film screenings and official speeches.</li>
+                                    <li>Lead Marketing to establish solid branding, advertisments and social media broadcasts</li>
+                                    <li>Involved in technical productions such as lighting and sound systems and stage setup</li>
+                                    <li>Notable shows include: Kygo, Porter Robinson, Chance the Rapper, Haerts, Krewella and Cage the Elephant</li>
+                                </ul>
+                            </div>
+                        </div>
+                     </div>
+                    </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 exp-container">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 text-left exp-left">
+                            <div class="row exp-row">
+                                <h1 class="">Engineering Tutor</h1>
+                                <h3>for Malaysian students at CU</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-right exp-left">
+                            <div class="row exp-row-date">
+                                <h5 class="exp-date">August 2014 - Dec 2015</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left exp-left">
+                            <div class="row exp-row">
+                                <ul>
+                                    <li>Helped establish office hour sessions to help younger Malaysian students</li>
+                                    <li>Subjects include Physics, Calculus, Thermodynamics and CAPSTONE Engineering Design Projects</li>
+                                </ul>
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 exp-container">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 text-left exp-left">
+                            <div class="row exp-row">
+                                <h1 class="">Engineers Without Borders:</h1>
+                                <h3>student engineering consultants</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-right exp-left">
+                            <div class="row exp-row-date">
+                                <h5 class="exp-date">Summer 2013</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left exp-left">
+                            <div class="row exp-row">
+                                <ul>
+                                    <li>Member of builder team to design and develop a working electric-free Ram Pump system for developing countries in South America</li>
+                                    <li>Final pump systems were brought and implemented by another team in Iquitos, Peru</li>
+                                </ul>
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 exp-container">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 text-left exp-left">
+                            <div class="row exp-row">
+                                <h1 class="">Repair Technician</h1>
+                                <h3>Musa Electric, Teluk Intan, Perak</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-right exp-left">
+                            <div class="row exp-row-date">
+                                <h5 class="exp-date">Febr. 2010 - July 2010</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left exp-left">
+                            <div class="row exp-row">
+                                <ul>
+                                    <li>Air-conditioner and simple wiring repair and maintenance. Work include daily on-call to residentials and offices.</li>
+                                    <li>Common Air-cond maintenance involves evaporator and condenser clean-up and replacements of copper tubing, insulation and refrigerant.</li>
+                                </ul>
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!----><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 exp-container">
+                        <h2 class="text-center">Other Independent Ventures</h2>
+                        <hr/>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center exp-left">
+                            <div class="row exp-row-date">
+                                <h2 class="">Popsockets&#8482;</h2>
+                                <br/>
+                                <div class="exp-ventures text-left">
+                                    <h4 >Official Southeast Asian distributor of <a href="http://www.popsockets.com/">Popsockets</a>.</h4>
+                                    <h4>Involved in a team of 6 people to distribute products at festivals such as Tempatan Fest.</h4>
+                                    <h4>Currently looking for retailers and angel investors.</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center exp-left">
+                            <div class="row exp-row">
+                                <h2 class="">Moto Bazaar Store</h2>
+                                <br/>
+                                <div class="exp-ventures text-right">
+                                    <h4>Full-stack development of an online store for several auto dealers in Johor.</h4>
+                                    <h4>Front and Back end of development highly utilizes Javascript frameworks.</h4>
+                                    <h4>Database management utilizes MongoDB</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="skills" style="display:normal;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                	<i class="fa fa-fire fa-5x wow bounceIn text-alt" data-wow-delay=".1s" style="margin:-20px 0px 20px 0px; color:#f05f40" ></i>
+                	<br/>
+                    <h2 class="section-heading" style="color:#fff">Skills and Expertise</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 text-center">
+                    <div class="service-box">
+                        <!-- <i class="fa fa-4x fa-diamond wow bounceIn text-primary">aldskfjlsdk</i> -->
+                        <h3>Engineering Software Tools</h3>
+                        <canvas id="canvasEng" width="300" height="300"></canvas>
+                        <p class="text-muted skills-description"> <sup>[1]</sup> ASPEN Tech softwares include HYSYS, Plus, Energy Integration Analyzer, and One</p>
+                        <br/>
+                        <p class="text-muted skills-description"> <sup>[2]</sup> Computer-Aided Design (CAD) include Cinema 4D (3D printing tool) and AutoDesk CFD (Flow Dynamics tool)</p>
+                        <br />
+                        <p class="text-muted skills-description"> <sup>[3]</sup> Project Economics include cashflow, ROI, IRR and various economic sensitivity analysis calculation</p>
+                        <br />
+                        <p class="text-muted skills-description"> <sup>[4]</sup> Gas Chromatography using LabView&#8482;</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 text-center">
+                    <div class="service-box">
+                        <!--<i class="fa fa-4x fa-area-chart wow bounceIn text-primary" data-wow-delay=".2s"></i>-->
+                        <h3>Web Application Languages</h3>
+                        <canvas id="canvasWeb" width="300" height="300"></canvas>
+                        <p class="text-muted skills-description"> <sup>[1]</sup> Javascript frameworks include D3.js, Angular.js, jQuery, and Node.js</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="no-padding projects" id="projects" style="display:normal;">
+        <div class="container-fluid">
+            <div class="row no-gutter portfolio-container" style="overflow:hidden">
+                <h2 style="text-align:center;padding:20px;">Projects Portfolio</h2>
+                <hr />
+                <div class="col-lg-12 col-md-12 text-left project-legend">
+                    <div class="col-lg-4 col-md-4"></div>
+                    <div class="col-lg-4 col-md-4" >
+                        <h4><img src="img/icons/engr-icon-dark.png" alt="" class="project-icon-legend"/> = Process Engineering</h4>
+                        <h4 ><img src="img/icons/cad-icon-dark.png" alt="" class="project-icon-legend" />  = Computer-Aided Designs</h4>
+                        <h4><img src="img/icons/code-icon-dark.png" alt="" class="project-icon-legend"/> = Web Applications</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-4"></div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <div class="portfolio-box-title">
+                            <div class="portfolio-box-title-content">
+                            <img src="img/icons/engr-icon.png" alt="" width="30px" style="float:left;margin: -2px 7px 0px 0px; "/>Triple-Effect Evaporator
+                            </div>
+                        </div>
+                        <img src="img/portfolio/TEE-effects.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Process Engineering
+                                </div>
+                                <div class="project-name">
+                                    Triple-Effect Evaporator for sugar production: Counter-current and Vacuum operating condition
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <div class="portfolio-box-title">
+                            <div class="portfolio-box-title-content" style="padding-left:15%">
+                                <img src="img/icons/engr-icon.png" alt="" width="30px" style="float:left;margin: -2px 10px 0px 0px;padding-left" />Shell and Tube Heat Exchanger
+                            </div>
+                        </div>
+                        <img src="img/portfolio/TEE-HX.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Process Engineering
+                                </div>
+                                <div class="project-name">
+                                    1/5th Scale Heat Exchanger: Design and Modelling full-sized HX using Nusselt number
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <div class="portfolio-box-title">
+                            <div class="portfolio-box-title-content">
+                                <img src="img/icons/cad-icon.png" alt="" width="35" style="float:left;margin: -4px 10px 0px 0px; " />3D Printed PC Case
+                            </div>
+                        </div>
+                        <img src="img/portfolio/3dcad.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    3D Printing CAD
+                                </div>
+                                <div class="project-name">
+                                    Compact desktop casing with better form-factor and cooling fluid flow. Modelled using AutoDesk CFD and Cinema4D
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <div class="portfolio-box-title">
+                            <div class="portfolio-box-title-content">
+                                <img src="img/icons/engr-icon.png" alt="" width="30px" style="float:left;margin: -2px 10px 0px 0px; " />Hydraulic-driven Ram Pump 
+                            </div>
+                        </div>
+                        <img src="img/portfolio/rampump.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Process Engineering
+                                </div>
+                                <div class="project-name">
+                                    Pump running with no electricity designed for rural and poor area with steady river flow
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box" target="_blank">
+                        <div class="portfolio-box-title">
+                            <div class="portfolio-box-title-content">
+                                <img src="img/icons/cad-icon.png" alt="" width="35" style="float:left;margin: -4px 10px 0px 0px; " />Tubular Flow Reactor
+                            </div>
+                        </div>
+                        <img src="img/portfolio/TFR.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Process Engineering
+                                </div>
+                                <div class="project-name">
+                                    Modelling Dispersion effects on reaction conversion performance using TFR
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <div class="portfolio-box-title">
+                            <div class="portfolio-box-title-content">
+                                <img src="img/icons/code-icon.png" alt="" width="35px" style="float:left;margin: -4px 10px 0px 0px; " />MotoBazaar Store
+                            </div>
+                        </div>
+                        <img src="img/portfolio/pumps.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Web App Programming
+                                </div>
+                                <div class="project-name">
+                                    Used-Car Dealer store using Angular+Node JS and MongoDB
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <a href="#" class="portfolio-box">
+                        <div class="portfolio-box-title">
+                            <div class="portfolio-box-title-content">
+                                <img src="img/icons/engr-icon.png" alt="" width="35px" style="float:left;margin: -4px 10px 0px 0px; " />Natural Gas Cryogenic Processing Plant
+                            </div>
+                        </div>
+                        <img src="img/portfolio/turboexpander.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Oil and Gas Processing
+                                </div>
+                                <div class="project-name">
+                                    Natural gas Propane recovery with Ethane recovery mode capability. Ethane recovery mode is turned on during favorable market price. Emphasis on turboexpander and demethanizer design.
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <a href="#" class="portfolio-box">
+                        <div class="portfolio-box-title">
+                            <div class="portfolio-box-title-content">
+                                <img src="img/icons/engr-icon.png" alt="" width="35px" style="float:left;margin: -4px 10px 0px 0px; " />Mobile Gas-to-Liquid (Fischer-Tropsch) Processing Plant
+                            </div>
+                        </div>
+                        <img src="img/portfolio/ft-core.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Oil and Gas Processing
+                                </div>
+                                <div class="project-name">
+                                    Converting flare (waste) methane into logistically desireable naphta, kerosene and wax products. Emphasis on microchannel reactor with cobalt-based catalyst design.
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--<p class="photo-caption text-right">Image Source: Shell's Pearl GTL plant in Qatar by <em>Shell</em></p>-->
+    </section>
+
+    <aside class="bg-dark" style="display:none">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>Free Download at Start Bootstrap!</h2>
+                <a href="#" class="btn btn-default btn-xl wow tada">Download Now!</a>
+            </div>
+        </div>
+    </aside>
+
+    <section id="contact" style="display:normal">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Contact me!</h2>
+                    <hr class="primary">
+                    <p>Am I an excellent match for your company? Want to meet me in person for a professional conversation? Lets get in touch!</p>
+                    <p>[Reference contacts are available upon request]</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
+                    <p>123-456-6789</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <p><i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i></p>
+                    <p><a href="mailto:your-email@your-domain.com" style="color:#0087ad;">mukhlis.jamato@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+    <script src="js/Chart.min.js"></script>
+
+    <!-- Chart.js -->
+    <script src="js/LineChart.js"></script>
+    <script src="js/RadarChart.js"></script>
+
+    <!-- Google maps-->
+    <script src="js/maps.js"></script>
+    <script src="js/modernizr.js"></script>
+
+</body>
+
+</html>
